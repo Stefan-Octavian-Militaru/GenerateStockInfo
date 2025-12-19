@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LMz8iySAaEitLk70q-rWnQ" Reference="hG3uUG0x10qU96JB-5NUow/1JhZLsR6z0i2-SBP2FUNZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="marketwatch.com/investing/stock/aapl" CVScreenId="8865d4d2-eed1-4d43-b835-462b5b1ea1b6" CvType="AnyWordGroup" DesignTimeRectangle="172, 637, 74, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='maincontent' tag='SPAN' type='' class='primary ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="37d39edc-df89-49e4-9bd3-138d0fb2b5c9" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='99944778' title='AAPL Stock Price | Apple Inc. Stock Quote (U.S.: Nasdaq) | MarketWatch' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8865d4d2-eed1-4d43-b835-462b5b1ea1b6" CvTextArea="170, 619, 37, 12" CvTextArgument="OPEN" CvType="Text" DesignTimeRectangle="172, 620, 185, 14" FuzzySelectorArgument="&lt;webctrl class='label' type='' tag='SMALL' aaname='Open' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='OPEN' /&gt;" Guid="0e9b8231-9606-43b9-ba86-8a4842e4a205" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="feb3b13206573bfc82f5d2bc6ddae303.png" xmlns="">0ouo5DWTO80Sp32qEkPAh8A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

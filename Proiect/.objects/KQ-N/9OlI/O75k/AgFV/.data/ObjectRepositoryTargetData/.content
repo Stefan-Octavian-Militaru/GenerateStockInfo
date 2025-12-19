@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="erg_FqNuw0eTElU8T1eWtQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="finviz.com" CVScreenId="d2b19b23-2ad1-45f1-9e46-364d896eeb99" CvElementArea="66, 229, 477, 42" CvType="InputBox" DesignTimeRectangle="69, 231, 475, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='w-full' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='«r1»' tableRow='2' tag='INPUT' /&gt;" Guid="cbed9eaf-ea3a-418e-9c14-ef786820d126" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Finviz - Stock Screener' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="62f946d9f8614ed534cfdb6359706a79.png" xmlns="">0uwq3ZWd6SUCm94IbaNV5Zg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

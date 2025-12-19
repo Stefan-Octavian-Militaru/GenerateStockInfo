@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Răspunsul tău(4)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "8T0Tiij-_k6XWa4u0AN_zQ",
+  "Reference": "DjGQoZNI20SYTIvtxAFJCQ/8T0Tiij-_k6XWa4u0AN_zQ",
+  "ParentRef": "DjGQoZNI20SYTIvtxAFJCQ/euIEZxCE8kCPwnmpluCnsg",
+  "Created": "2025-11-06T15:12:18.1530803Z",
+  "Updated": "2025-11-06T15:12:18.1530803Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

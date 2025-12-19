@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Contact Details",
+  "Type": "Screen",
+  "Id": "euIEZxCE8kCPwnmpluCnsg",
+  "Reference": "DjGQoZNI20SYTIvtxAFJCQ/euIEZxCE8kCPwnmpluCnsg",
+  "ParentRef": "DjGQoZNI20SYTIvtxAFJCQ/KzimHImmykaSaGxnr7b1ug",
+  "Created": "2025-11-06T14:50:02.5876921Z",
+  "Updated": "2025-11-06T14:50:02.5876921Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

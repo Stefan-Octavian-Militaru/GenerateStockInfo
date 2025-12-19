@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tjgI-zcLN0GfR1eLbVjqbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="finviz.com/quote.ashx" CVScreenId="3d951582-db17-4a9e-9509-f435bd43694b" CvType="AnyWordGroup" DesignTimeRectangle="247, 300, 73, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='B' /&gt;" Guid="25d07b2d-bc95-4331-a426-2a57b5af28e6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AAPL - Apple Inc Stock Price and Quote' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3d951582-db17-4a9e-9509-f435bd43694b" CvTextArea="100, 301, 84, 17" CvTextArgument="Market Cap" CvType="Text" DesignTimeRectangle="96, 297, 146, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='snapshot-td2 cursor-pointer w-[7%]' aaname='Market Cap' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Market Cap' /&gt;" Guid="077cae82-dce7-43a9-8e93-e0e3f723133f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c462446e2574bf80fb6eb6b708c0d78e.png" xmlns="">0sPJkAOR0aUG7NHNn9H8a0w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

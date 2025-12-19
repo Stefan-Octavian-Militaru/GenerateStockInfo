@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iK7iP3ZfY06tLAaVfOwmxQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="marketwatch.com/investing/stock/aapl" DesignTimeRectangle="172, 620, 185, 14" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='label' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;small' tag='SMALL' aaname='Open' /&gt;" Guid="82843d26-ee24-4ac4-a5ac-6152c6a661f7" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='99944778' title='AAPL Stock Price | Apple Inc. Stock Quote (U.S.: Nasdaq) | MarketWatch' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="9c0209f8b1ed4b9c5e03ea7af6a2d40c.png" xmlns="">0Q7-YNOfNMkysNbVbAppcJg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WvfPmrk2wU-SWyRkGqHB-w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="finviz.com/quote.ashx" CVScreenId="f2472891-2d45-44f8-a008-f21f54ac0485" CvTextArea="100, 1006, 50, 17" CvTextArgument="Payout" CvType="Text" DesignTimeRectangle="101, 1005, 49, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='12' tag='A' /&gt;" Guid="8bfa1f8d-7bc8-40d3-a299-80ee3ebe47a3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AAPL - Apple Inc Stock Price and Quote' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7c884b4d9a5dc820ef806dd8d8c1c5c0.png" xmlns="">0gbOol3_oBEeiv4b3x2qT2w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

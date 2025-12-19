@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome eMAG.ro - Căutarea nu se oprește nicio",
+  "Type": "Screen",
+  "Id": "m8_ZETrxTU65Mysdw3QU0g",
+  "Reference": "yDsi_ppqBkOXTL7vgvuNJg/m8_ZETrxTU65Mysdw3QU0g",
+  "ParentRef": "yDsi_ppqBkOXTL7vgvuNJg/Zr-4K4WWakSiH_Etr-AWxA",
+  "Created": "2025-10-23T13:28:33.9498954Z",
+  "Updated": "2025-10-23T13:28:33.9498954Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Market Cap(1)",
+  "Type": "Element",
+  "Id": "XoV8Nm6FN0eMxonhadeBHA",
+  "Reference": "hG3uUG0x10qU96JB-5NUow/XoV8Nm6FN0eMxonhadeBHA",
+  "ParentRef": "hG3uUG0x10qU96JB-5NUow/O75kkaEQb0S4brAvVFKzWA",
+  "Created": "2025-12-11T11:29:53.6658576Z",
+  "Updated": "2025-12-11T11:29:53.6658576Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

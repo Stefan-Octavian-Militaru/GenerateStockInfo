@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="0EQWSiacc062U0GnzjJY_w" Reference="hG3uUG0x10qU96JB-5NUow/gRDpdmBRRk-Q03_t6ojCzA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="aOLYXa8qTkqW_tlZoM8hhg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFfSURBVFhHxZTBSURBEEQbBA+CsCB4EIQFQfAgLJiAIRiCIRiCGRiCIRiCIRiCIRjCSO1QbG1Xf9bLtofiz38z013T0/9HRIx/loFuGeiWgW4Z6JaBbhnoloFuGeiWgW4ZOJpOVjHW7zFuPva4LzyGVk8xNj8xHsZ8ypwvpk7XMW4/p8hwCmUcn212a3BKZXjef8/k0NXrHw0gCDeRXb/tM47PH+f7xbMzPMmwP+UxsNXly24Tk2mgygCqwzKrgbuv+Y4qYM1BAzkQk2kZKwMovc6DodzZ0EED6FINBGmgykA1j+vgQWAu5ykNoFsZoDLCcmYD1bx2fVF6N6ClRwPmO8cVqMHKADo+M+wpErsB7XAEygYQSFk2wA5Xpp/wguZAA/M7Vca/15IB7XAyVBP/kiKpG2CHayAm0ztcMqAdToZPuUiYZaBbBrploFsGumWgWwa6ZaBbBrploFsGWvULmcm33xBkfPkAAAAASUVORK5CYII=" Reference="hG3uUG0x10qU96JB-5NUow/gRDpdmBRRk-Q03_t6ojCzA" Selector="&lt;html app='chrome.exe' htmlwindowname='51107431' title='MarketWatch: Stock Market News - Financial News - MarketWatch' /&gt;" Url="https://www.marketwatch.com/" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="16087c1915a7616c4eaac9d04187ec04.jpg" xmlns="">0yPFsHaR2K0etJ7uUecQj1w</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

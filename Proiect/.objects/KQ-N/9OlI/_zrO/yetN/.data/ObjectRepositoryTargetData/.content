@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z_Za9Nx2hEOX5ukwE04Dyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="finviz.com/quote.ashx" CVScreenId="f5dc2d69-344d-4526-b809-bdb0a4bee578" CvElementArea="67, 294, 477, 42" CvType="InputBox" DesignTimeRectangle="69, 296, 475, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='w-full' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='«r1»' tableRow='2' tag='INPUT' /&gt;" Guid="6bf0291f-755d-479c-8b7c-92cef71e37f3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AAPL - Apple Inc Stock Price and Quote' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f5dc2d69-344d-4526-b809-bdb0a4bee578" CvElementArea="67, 294, 477, 42" CvType="InputBox" DesignTimeRectangle="81, 309, 15, 15" FullSelectorArgument="&lt;webctrl class='w-full' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='use' /&gt;" Guid="3a06b55d-ccbc-496c-a3e2-77e397781887" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2cd5ec03381817963b35bd3a858b6a75.png" xmlns="">0KNp6RzU4tEuZ6ccJDEDzGA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

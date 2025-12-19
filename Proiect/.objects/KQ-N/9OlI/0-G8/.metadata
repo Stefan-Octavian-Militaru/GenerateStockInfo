@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Finviz - Stock Screener(2)",
+  "Type": "Screen",
+  "Id": "0-G8-gzM8UuCMKQLj9RXLQ",
+  "Reference": "hG3uUG0x10qU96JB-5NUow/0-G8-gzM8UuCMKQLj9RXLQ",
+  "ParentRef": "hG3uUG0x10qU96JB-5NUow/9OlIGrsDF0Cc0gROFWdp6A",
+  "Created": "2025-12-19T10:57:55.0856136Z",
+  "Updated": "2025-12-19T10:57:55.0856136Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

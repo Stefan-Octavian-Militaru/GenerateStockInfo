@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LgsKf-hvt0iYVo9sXd-bpA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="finviz.com/search.ashx" CVScreenId="61e6b5fb-ecd1-4350-93a7-6e128bba520b" DesignTimeRectangle="102, 476, 39, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Ticker Description Sector Industry Country Market cap' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" Guid="6e1bd47e-4d6b-4bb1-9148-f8b7d7d77a12" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="61e6b5fb-ecd1-4350-93a7-6e128bba520b" CvTextArea="99, 446, 46, 13" CvTextArgument="Ticker" CvType="Text" DesignTimeRectangle="94, 443, 138, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Ticker Description Sector Industry Country Market cap' tag='TABLE' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;webctrl type='' tag='TH' class='text-left' aaname='Ticker' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Ticker' /&gt;" Guid="b58b99d7-16a4-44bf-918f-a14eaf2e07d8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c2c9d18f4f9c829458a6cfcab0a6b171.png" xmlns="">0W2q8HWz_uk2ofAj7kOhXRw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

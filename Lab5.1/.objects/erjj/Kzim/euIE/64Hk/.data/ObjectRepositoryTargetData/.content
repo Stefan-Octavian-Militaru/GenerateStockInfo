@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UjQtjRVRekadejI1Pqp28Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="docs.google.com/forms/d/e/1FAIpQLSedUUGi4rtqiD3NJgA_2neClfUAckD-Te4NEyZzvb36F-gXQw/viewform" CVScreenId="5fdf2a3a-7323-491c-a068-170de7a73f57" CvElementArea="588, 554, 741, 39" CvType="InputBox" DesignTimeRectangle="591, 562, 738, 30" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" Guid="b4125488-eed9-4f75-b6ee-6eeef80a1eec" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Contact Details' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2910edfdb6b71ee65af8ea4fe99233fb.png" xmlns="">0gcvTmYMcoUiYQpAq3koD9w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

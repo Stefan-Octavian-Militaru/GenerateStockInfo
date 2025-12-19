@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT searchboxTrigger",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "5wimzAt3iUWCZ4DH_MzyqQ",
+  "Reference": "yDsi_ppqBkOXTL7vgvuNJg/5wimzAt3iUWCZ4DH_MzyqQ",
+  "ParentRef": "yDsi_ppqBkOXTL7vgvuNJg/m8_ZETrxTU65Mysdw3QU0g",
+  "Created": "2025-10-23T13:32:37.8965113Z",
+  "Updated": "2025-10-23T13:32:37.8965113Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

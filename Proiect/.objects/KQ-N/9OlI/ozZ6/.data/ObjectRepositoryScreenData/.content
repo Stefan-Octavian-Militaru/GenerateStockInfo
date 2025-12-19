@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="eteiGoJwyk-Q7fCf7IUS0Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" Selector="&lt;html app='chrome.exe' title='AAPL - Apple Inc Stock Price and Quote' /&gt;" Url="finviz.com/quote.ashx" />
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

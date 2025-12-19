@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CpZu3Hz2z0-DZaCclxTx-Q" Reference="hG3uUG0x10qU96JB-5NUow/6xFIO134REOablu90tgX1w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="finviz.com" CVScreenId="1958841b-ebbd-400c-a43b-bdeb87dceca0" CvElementArea="1129, 314, 93, 39" CvTextArea="1140, 326, 70, 18" CvTextArgument="Reject all" CvType="Button" DesignTimeRectangle="1131, 316, 89, 36" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Reject all' tag='BUTTON' /&gt;" Guid="869d9f68-bcb3-454e-be6e-bc27a65a0dba" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Finviz - Stock Screener' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f7faa8721474b073c9f4069a02b8985d.png" xmlns="">06OBflc2SS0m8FA-NsvC2xA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

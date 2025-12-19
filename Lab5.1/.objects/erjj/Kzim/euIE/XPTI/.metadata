@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Trimite",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "XPTIGu9780aWh2sN9wMKAQ",
+  "Reference": "DjGQoZNI20SYTIvtxAFJCQ/XPTIGu9780aWh2sN9wMKAQ",
+  "ParentRef": "DjGQoZNI20SYTIvtxAFJCQ/euIEZxCE8kCPwnmpluCnsg",
+  "Created": "2025-11-06T15:18:29.075173Z",
+  "Updated": "2025-11-06T15:18:29.075173Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

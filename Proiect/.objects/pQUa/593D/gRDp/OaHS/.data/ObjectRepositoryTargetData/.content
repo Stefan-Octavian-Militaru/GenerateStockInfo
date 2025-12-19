@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Xj3anmt4VU249kngYFVl3w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="marketwatch.com" CVScreenId="48bcac3f-57c9-4f94-a8cf-6e627cf74ad3" CvTextArea="211, 422, 330, 28" CvTextArgument="Enter a symbol or keyword" CvType="Text" DesignTimeRectangle="163, 398, 1281, 76" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='site-search' tag='INPUT' /&gt;" Guid="a28ce09c-5742-4b14-bd86-f9a9755d5f32" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='99944778' title='MarketWatch: Stock Market News - Financial News - MarketWatch' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7e45929de012449fded1b28342d0b1f5.png" xmlns="">0FFapjHM7UEWhlmeRGYb-eQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
