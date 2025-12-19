@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="ikE-XKCoo0GlIon9E11avw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="docs.google.com/forms/d/e/1FAIpQLSedUUGi4rtqiD3NJgA_2neClfUAckD-Te4NEyZzvb36F-gXQw/viewform" CVScreenId="ce88c612-d73f-48cc-8a89-3054dfd085d5" CvElementArea="586, 677, 376, 40" CvType="InputBox" DesignTimeRectangle="591, 687, 113, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Răspunsul tău' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='6' tag='DIV' /&gt;" Guid="d2546160-20a3-4cf9-88b3-10928a2de57b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Contact Details' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="5d880fab31c723203f6b2435659da266.png" xmlns="">0LaJES21Z_E2MjID7q3mZaQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">TypeInto</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

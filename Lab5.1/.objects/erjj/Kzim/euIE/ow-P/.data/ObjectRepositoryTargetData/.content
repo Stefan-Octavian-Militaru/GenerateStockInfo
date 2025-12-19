@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="EyxYukBqTkKKssip7i88jA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="docs.google.com/forms/d/e/1FAIpQLSedUUGi4rtqiD3NJgA_2neClfUAckD-Te4NEyZzvb36F-gXQw/formResponse" CVScreenId="4379fc86-a4b3-4050-aeb4-3bdc4857da83" CvTextArea="597, 372, 149, 22" CvTextArgument="Trimite alt răspuns" CvType="Text" DesignTimeRectangle="600, 371, 145, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" Guid="5d8070a5-ecfb-44b7-845f-c3f264732050" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Contact Details' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="da645ae3bf147e57985b9e37d4358874.png" xmlns="">0dLGcEW3_xUivxjaXe2N5PQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>
