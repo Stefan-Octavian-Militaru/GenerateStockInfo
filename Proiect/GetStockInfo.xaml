@@ -10,7 +10,7 @@
         <RequiredArgumentAttribute />
       </x:Property.Attributes>
     </x:Property>
-    <x:Property Name="stockName" Type="InArgument(x:String)">
+    <x:Property Name="in_StockTicker" Type="InArgument(x:String)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
       </x:Property.Attributes>
@@ -71,6 +71,7 @@
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>System.Numerics</x:String>
       <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C19AC53BB95_v2_sub_chat_sub_completion_Create.Bundle</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -134,6 +135,10 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>NPOI.Core</AssemblyReference>
       <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>C19AC53BB95_v2_sub_c.r407V3gtfDH10Qa5WpApvT2</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -141,7 +146,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="GetStockInfo" sap:VirtualizedContainerService.HintSize="897.2,3224.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="GetStockInfo" sap:VirtualizedContainerService.HintSize="830.4,3328" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataRow" Name="stockAttributes" />
     </Sequence.Variables>
@@ -150,7 +155,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="830.4,3201.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="830.4,3304.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -169,16 +174,16 @@
           <OutArgument x:TypeArguments="x:Object">[stockAttributes("Stock name")]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[stockName]</InArgument>
+          <InArgument x:TypeArguments="x:String">[in_StockTicker]</InArgument>
         </Assign.Value>
       </Assign>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome Finviz - Stock Screener(2)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="796.8,2558.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InUiElement="[usedBrowser]" IsIncognito="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="0121ac5d-5199-4f2f-bb5c-fe468082f684" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome Finviz - Stock Screener(2)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="796.8,2661.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InUiElement="[usedBrowser]" IsIncognito="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="0121ac5d-5199-4f2f-bb5c-fe468082f684" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="795.2,2376" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="795.2,2531.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="stockExist" />
               </Sequence.Variables>
@@ -187,11 +192,12 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT «r1»'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="761.6,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="0121ac5d-5199-4f2f-bb5c-fe468082f684" Text="[stockName + &quot;[k(enter)]&quot;]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT «r1»'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="761.6,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="0121ac5d-5199-4f2f-bb5c-fe468082f684" Text="[in_StockTicker + &quot;[k(enter)]&quot;]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="finviz.com" CVScreenId="d2b19b23-2ad1-45f1-9e46-364d896eeb99" ContentHash="erg_FqNuw0eTElU8T1eWtQ" CvElementArea="66, 229, 477, 42" CvType="InputBox" DesignTimeRectangle="69, 231, 475, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='w-full' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='«r1»' tableRow='2' tag='INPUT' /&gt;" Guid="cbed9eaf-ea3a-418e-9c14-ef786820d126" InformativeScreenshot="62f946d9f8614ed534cfdb6359706a79.png" Reference="hG3uUG0x10qU96JB-5NUow/AgFVcmc9jku9o79gTgTRLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Finviz - Stock Screener' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NTypeInto.Target>
               </uix:NTypeInto>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="761.6,126.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
               <ui:UiElementExists DisplayName="Element Exists 'CANVAS'" Exists="[stockExist]" sap:VirtualizedContainerService.HintSize="761.6,143.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                 <ui:UiElementExists.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c0ac21d9-255a-45e7-89b2-7fea9a9ca219" InformativeScreenshot="0a7599f97025d5686eeea45303bc03da" Selector="&lt;webctrl class='second' tag='CANVAS' /&gt;">
@@ -204,9 +210,9 @@
                   </ui:Target>
                 </ui:UiElementExists.Target>
               </ui:UiElementExists>
-              <If Condition="[stockExist]" sap:VirtualizedContainerService.HintSize="761.6,795.2" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[stockExist]" sap:VirtualizedContainerService.HintSize="761.6,807.2" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,229.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,233.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,17 +222,17 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,423.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,431.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AAPL'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0121ac5d-5199-4f2f-bb5c-fe468082f684" Version="V5">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'AAPL'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0121ac5d-5199-4f2f-bb5c-fe468082f684" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="finviz.com/search.ashx" CVScreenId="61e6b5fb-ecd1-4350-93a7-6e128bba520b" DesignTimeRectangle="102, 476, 39, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Ticker Description Sector Industry Country Market cap' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" Guid="6e1bd47e-4d6b-4bb1-9148-f8b7d7d77a12" InformativeScreenshot="c2c9d18f4f9c829458a6cfcab0a6b171.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target CVScreenId="61e6b5fb-ecd1-4350-93a7-6e128bba520b" CvTextArea="99, 446, 46, 13" CvTextArgument="Ticker" CvType="Text" DesignTimeRectangle="94, 443, 138, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Ticker Description Sector Industry Country Market cap' tag='TABLE' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;webctrl type='' tag='TH' class='text-left' aaname='Ticker' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Ticker' /&gt;" Guid="b58b99d7-16a4-44bf-918f-a14eaf2e07d8" SearchSteps="FuzzySelector, CV" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -237,28 +243,13 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="761.6,266.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="0121ac5d-5199-4f2f-bb5c-fe468082f684" Version="V5">
-                <uix:NMouseScroll.SearchedElement>
-                  <uix:SearchedElement>
-                    <uix:SearchedElement.OutUiElement>
-                      <OutArgument x:TypeArguments="ui:UiElement" />
-                    </uix:SearchedElement.OutUiElement>
-                    <uix:SearchedElement.Target>
-                      <uix:TargetAnchorable BrowserURL="finviz.com/quote.ashx" CVScreenId="f2472891-2d45-44f8-a008-f21f54ac0485" ContentHash="WvfPmrk2wU-SWyRkGqHB-w" CvTextArea="100, 1006, 50, 17" CvTextArgument="Payout" CvType="Text" DesignTimeRectangle="101, 1005, 49, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='12' tag='A' /&gt;" Guid="8bfa1f8d-7bc8-40d3-a299-80ee3ebe47a3" InformativeScreenshot="7c884b4d9a5dc820ef806dd8d8c1c5c0.png" Reference="hG3uUG0x10qU96JB-5NUow/1vmlIKwGi0m3rRtxaopTuQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AAPL - Apple Inc Stock Price and Quote' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                    </uix:SearchedElement.Target>
-                    <uix:SearchedElement.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:SearchedElement.Timeout>
-                  </uix:SearchedElement>
-                </uix:NMouseScroll.SearchedElement>
-              </uix:NMouseScroll>
-              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each attribute" sap:VirtualizedContainerService.HintSize="761.6,604" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[attributeList]">
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each attribute" sap:VirtualizedContainerService.HintSize="761.6,883.2" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[attributeList]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:String">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:String" Name="attribute" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="760,469.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="760,748.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="ui:UiElement" Name="currentOutput" />
                       </Sequence.Variables>
@@ -267,7 +258,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="726.4,236" sap2010:WorkflowViewState.IdRef="AnchorBase_3">
+                      <ui:AnchorBase AnchorPosition="Auto" ContinueOnError="True" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="726.4,232" sap2010:WorkflowViewState.IdRef="AnchorBase_3">
                         <ui:AnchorBase.Action>
                           <ActivityAction x:TypeArguments="ui:Anchor">
                             <ActivityAction.Argument>
@@ -302,14 +293,34 @@
                           </ui:WaitUiElementAppear>
                         </ui:AnchorBase.AnchorProvider>
                       </ui:AnchorBase>
-                      <Assign sap:VirtualizedContainerService.HintSize="726.4,169.6" sap2010:WorkflowViewState.IdRef="Assign_1">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:Object">[stockAttributes(attribute)]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">[currentOutput.Get("innerText").ToString]</InArgument>
-                        </Assign.Value>
-                      </Assign>
+                      <If Condition="[currentOutput IsNot Nothing]" sap:VirtualizedContainerService.HintSize="726.4,452.8" sap2010:WorkflowViewState.IdRef="If_2">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,229.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[stockAttributes(attribute)]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[currentOutput.Get("innerText").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
                     </Sequence>
                   </ActivityAction>
                 </ui:ForEach.Body>

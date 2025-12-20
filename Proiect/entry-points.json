@@ -3,8 +3,25 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "1f676198-1c5d-4623-864a-538420de41f9",
+      "uniqueId": "5469cba5-0fb3-443c-9487-5992b2d11d85",
       "type": "process"
+    },
+    {
+      "filePath": "Process_FinancialData.xaml",
+      "uniqueId": "15d88bbf-8132-471e-a5a4-7ed8f2e69e36",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "out_ExcelPath": {
+            "type": "string"
+          },
+          "in_StockTicker": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
     }
   ]
 }
