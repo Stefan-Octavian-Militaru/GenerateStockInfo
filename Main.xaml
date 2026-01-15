@@ -107,6 +107,7 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="897.2,1056.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="APIkey" />
       <Variable x:TypeArguments="scg:List(x:String)" Name="list_attributeList" />
       <Variable x:TypeArguments="x:Int32" Name="int_NrRelatedStocks" />
       <Variable x:TypeArguments="x:String" Name="str_Email" />
@@ -127,12 +128,13 @@
     </ui:InputDialog>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadConfigFile - Invoke Workflow File (ReadConfigFile.xaml)" sap:VirtualizedContainerService.HintSize="449.6,180.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="ReadConfigFile.xaml">
       <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="APIkey">[APIkey]</OutArgument>
         <OutArgument x:TypeArguments="x:String" x:Key="email">[str_Email]</OutArgument>
         <OutArgument x:TypeArguments="x:Int32" x:Key="nrRelatedStocks">[int_NrRelatedStocks]</OutArgument>
         <OutArgument x:TypeArguments="scg:List(x:String)" x:Key="attributeList">[list_attributeList]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process_FinancialData - Invoke Workflow File (Process_FinancialData.xaml)" sap:VirtualizedContainerService.HintSize="449.6,180.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Process_FinancialData.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process_FinancialData - Invoke Workflow File (Process_FinancialData.xaml)" sap:VirtualizedContainerService.HintSize="449.6,180.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Process_FinancialData.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:Int32" x:Key="in_NrRelatedStocks">[int_NrRelatedStocks]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="out_ExcelPath">[str_ExcelPath]</InArgument>
@@ -142,12 +144,13 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process_NewsAI - Invoke Workflow File (Process_NewsAI.xaml)" sap:VirtualizedContainerService.HintSize="449.6,180.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Process_NewsAI.xaml">
       <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_APIkey">[APIkey]</InArgument>
         <OutArgument x:TypeArguments="x:String" x:Key="out_PDFPath">[str_PdfPath]</OutArgument>
         <OutArgument x:TypeArguments="x:String" x:Key="out_SummaryText">[str_AISummary]</OutArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_StockTicker">[str_Ticker]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" UseRichTextEditor="{x:Null}" AttachmentsCollection="[{ &quot;Report_&quot; + str_Ticker.Trim() + &quot;.pdf&quot; }]" Body="[&quot;Salut, iată analiza generată de AI:&quot; + vbCrLf + vbCrLf + str_AISummary]" ConnectionMode="LegacyConfiguration" DisplayName="Send Outlook Desktop Mail Message" sap:VirtualizedContainerService.HintSize="449.6,217.6" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Raport complet pentru &quot; + str_Ticker]" To="[str_Email]" UseISConnection="False">
+    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" UseRichTextEditor="{x:Null}" AttachmentsCollection="[{ &quot;Report_&quot; + str_Ticker.Trim() + &quot;.pdf&quot; }]" Body="[&quot;Salut, iată analiza generată de AI:&quot; + vbCrLf + vbCrLf + str_AISummary]" ConnectionMode="LegacyConfiguration" DisplayName="Send Outlook Desktop Mail Message" sap:VirtualizedContainerService.HintSize="449.6,217.6" sap2010:WorkflowViewState.IdRef="SendOutlookMail_4" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Raport complet pentru &quot; + str_Ticker]" To="[str_Email]" UseISConnection="False">
       <ui:SendOutlookMail.ConnectionDetailsBackupSlot>
         <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="{x:Null}">
           <usau:BackupSlot.BackupValues>

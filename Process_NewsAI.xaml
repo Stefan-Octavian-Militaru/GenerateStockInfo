@@ -1,5 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="in_APIkey" Type="InArgument(x:String)" />
     <x:Property Name="out_PDFPath" Type="OutArgument(x:String)" />
     <x:Property Name="out_SummaryText" Type="OutArgument(x:String)" />
     <x:Property Name="in_StockTicker" Type="InArgument(x:String)" />
@@ -67,6 +68,9 @@
       <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
       <x:String>UiPath.IntegrationService.Activities.SWEntities.C19AC53BB95_v2_sub_chat_sub_completion_Create.Bundle</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -137,9 +141,10 @@
       <AssemblyReference>C19AC53BB95_v2_sub_c.r407V3gtfDH10Qa5WpApvT2</AssemblyReference>
       <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="897.2,2629.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="897.2,2793.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="status" />
     </Sequence.Variables>
@@ -148,7 +153,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="518.4,2606.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="484.79999999999995,2852" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="variable2" />
         <Variable x:TypeArguments="x:String" Name="str_CsvText" />
@@ -166,7 +171,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[&quot;{&quot;&quot;api_key&quot;&quot;: &quot;&quot;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&quot;&quot;, &quot;&quot;query&quot;&quot;: &quot;&quot;&quot; &amp; in_StockTicker &amp; &quot;&quot;&quot;, &quot;&quot;topic&quot;&quot;: &quot;&quot;news&quot;&quot;, &quot;&quot;max_results&quot;&quot;: 5, &quot;&quot;include_answer&quot;&quot;: true}&quot;]" BodyFormat="application/json" DisplayName="Http client" EnableSSLVerification="True" EndPoint="https://api.tavily.com/search" sap:VirtualizedContainerService.HintSize="484.8,103.2" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[str_TavilyResponse]" StatusCode="[status]" TimeoutMS="6000">
+      <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[&quot;{&quot;&quot;api_key&quot;&quot;: &quot;&quot;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&quot;&quot;, &quot;&quot;query&quot;&quot;: &quot;&quot;&quot; &amp; in_StockTicker &amp; &quot;&quot;&quot;, &quot;&quot;topic&quot;&quot;: &quot;&quot;news&quot;&quot;, &quot;&quot;max_results&quot;&quot;: 5, &quot;&quot;include_answer&quot;&quot;: true}&quot;]" BodyFormat="application/json" DisplayName="Http client" EnableSSLVerification="True" EndPoint="https://api.tavily.com/search" sap:VirtualizedContainerService.HintSize="451.2,103.2" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[str_TavilyResponse]" StatusCode="[status]" TimeoutMS="6000">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>
@@ -183,9 +188,9 @@
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
-      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="484.8,173.6" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[json_SearchData]" JsonString="[str_TavilyResponse]" />
-      <ui:BuildDataTable DataTable="[dt_NewsResults]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="484.8,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Content&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-      <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="484.8,409.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[json_SearchData(&quot;results&quot;)]">
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="451.2,173.6" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[json_SearchData]" JsonString="[str_TavilyResponse]" />
+      <ui:BuildDataTable DataTable="[dt_NewsResults]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Content&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="451.2,409.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[json_SearchData(&quot;results&quot;)]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="njl:JObject">
             <ActivityAction.Argument>
@@ -202,9 +207,9 @@
           </ActivityAction>
         </ui:ForEach.Body>
       </ui:ForEach>
-      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dt_NewsResults]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="484.8,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="News_Data.xlsx" />
-      <ui:OutputDataTable DataTable="[dt_NewsResults]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="484.8,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str_CsvText]" />
-      <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[&quot;{&quot;&quot;contents&quot;&quot;:[{&quot;&quot;parts&quot;&quot;:[{&quot;&quot;text&quot;&quot;:&quot;&quot;Ești un asistent financiar. Fă un rezumat scurt în română pentru acțiunea &quot; + in_StockTicker + &quot; bazat pe aceste știri: &quot; + System.Text.RegularExpressions.Regex.Replace(str_CsvText, &quot;[&quot;&quot;\\\r\n]&quot;, &quot; &quot;) + &quot;&quot;&quot;}]}]}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request (legacy)" EnableSSLVerification="True" EndPoint="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyDEje2ZoFSmD9Cz9UIgLgGgIc1Tt21Mnsw" sap:VirtualizedContainerService.HintSize="484.8,103.2" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" Result="[str_GeminiRawResponse]" TimeoutMS="60000">
+      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dt_NewsResults]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="451.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="News_Data.xlsx" />
+      <ui:OutputDataTable DataTable="[dt_NewsResults]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="451.2,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str_CsvText]" />
+      <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[&quot;{&quot;&quot;contents&quot;&quot;:[{&quot;&quot;parts&quot;&quot;:[{&quot;&quot;text&quot;&quot;:&quot;&quot;Ești un asistent financiar. Fă un rezumat scurt în română pentru acțiunea &quot; + in_StockTicker + &quot; bazat pe aceste știri: &quot; + System.Text.RegularExpressions.Regex.Replace(str_CsvText, &quot;[&quot;&quot;\\r\n]&quot;, &quot; &quot;) + &quot;&quot;&quot;}]}]}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request (legacy)" EnableSSLVerification="True" EndPoint="[&quot;https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=&quot;+in_APIkey]" sap:VirtualizedContainerService.HintSize="451.2,103.2" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" Result="[str_GeminiRawResponse]" TimeoutMS="60000">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>
@@ -221,41 +226,67 @@
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
-      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-        <ui:CommentOut.Body>
-          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="451.2,173.6" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[json_Gemini]" JsonString="[str_GeminiRawResponse]" />
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="451.2,848.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+        <TryCatch.Try>
+          <Assign sap:VirtualizedContainerService.HintSize="449.6,142.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[out_SummaryText]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[json_Gemini("candidates")(0)("content")("parts")(0)("text").ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+            <ActivityAction x:TypeArguments="s:Exception">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,412" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;Mesajul a fost generat in format incorect si nu poate fi trimis&quot;]" />
+                <Assign sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[out_SummaryText]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">["Generarea raportului a esuat"]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+        <TryCatch.Finally>
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[str_GeminiRawResponse]" />
           </Sequence>
-        </ui:CommentOut.Body>
-      </ui:CommentOut>
-      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="484.8,173.6" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[json_Gemini]" JsonString="[str_GeminiRawResponse]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[json_Gemini]" />
-      <Assign sap:VirtualizedContainerService.HintSize="484.8,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
-        <Assign.To>
-          <OutArgument x:TypeArguments="x:String">[out_SummaryText]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[json_Gemini("candidates")(0)("content")("parts")(0)("text").ToString]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <p:WordApplicationScope SensitivityLabel="{x:Null}" DisplayName="Word Application Scope" FilePath="Daily_Report.docx" sap:VirtualizedContainerService.HintSize="484.8,522.4" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1" SensitivityOperation="None">
+        </TryCatch.Finally>
+      </TryCatch>
+      <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="451.2,112.8" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="Daily_Report.docx" />
+      <p:WordApplicationScope SensitivityLabel="{x:Null}" DisplayName="Word Application Scope" FilePath="Daily_Report.docx" sap:VirtualizedContainerService.HintSize="451.2,514.4" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1" SensitivityOperation="None">
         <p:WordApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WordDocument">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,400.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,392.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="416,172.8" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="[out_SummaryText]" />
+              <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="[out_SummaryText]" />
               <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[&quot;Report_&quot; + in_StockTicker.Trim() + &quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
             </Sequence>
           </ActivityAction>

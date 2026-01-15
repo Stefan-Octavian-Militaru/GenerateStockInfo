@@ -109,39 +109,41 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>C19AC53BB95_v2_sub_c.r407V3gtfDH10Qa5WpApvT2</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OpenStockMonitor" sap:VirtualizedContainerService.HintSize="775.6,1890.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpenStockMonitor" sap:VirtualizedContainerService.HintSize="897.2,1720" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="587.2,1867.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="587.2,1696.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" BrowserType="Chrome" DisplayName="Private: Open Browser" sap:VirtualizedContainerService.HintSize="553.6,1784" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="True" UiBrowser="[usedBrowser]" Url="https://finviz.com/">
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" BrowserType="Chrome" DisplayName="Private: Open Browser" sap:VirtualizedContainerService.HintSize="553.6,1613.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="True" UiBrowser="[usedBrowser]" Url="https://finviz.com/">
         <ui:OpenBrowser.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1635.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1464.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Finviz - Stock Screener(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1571.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="24eeff7b-7342-4ef2-8f53-8c8b7fee8bee" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Finviz - Stock Screener(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1400.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="24eeff7b-7342-4ef2-8f53-8c8b7fee8bee" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1373.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1203.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Boolean" Name="cookiesExist" />
                       </Sequence.Variables>
@@ -162,10 +164,9 @@
                           </ui:Target>
                         </ui:UiElementExists.Target>
                       </ui:UiElementExists>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[cookiesExist]" />
-                      <If Condition="[cookiesExist]" sap:VirtualizedContainerService.HintSize="451.2,988" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If Condition="[cookiesExist]" sap:VirtualizedContainerService.HintSize="451.2,996" sap2010:WorkflowViewState.IdRef="If_2">
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,624.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,628.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -176,22 +177,22 @@
                                 <uix:TargetAnchorable BrowserURL="finviz.com" CVScreenId="d78068d0-6ed6-47b2-a559-43660cbd810c" CvTextArea="844, 862, 251, 18" CvTextArgument="Read more to accept preferences" CvType="Text" DesignTimeRectangle="834, 852, 270, 37" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Read more to accept preferences' tag='BUTTON' /&gt;" Guid="14673cda-9347-4db6-9064-19ae496e3574" InformativeScreenshot="0c2df927b03b71584bb27ff4e592fa09.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Finviz - Stock Screener' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reject all'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24eeff7b-7342-4ef2-8f53-8c8b7fee8bee" Version="V5">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reject all'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24eeff7b-7342-4ef2-8f53-8c8b7fee8bee" Version="V5">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="finviz.com" CVScreenId="1958841b-ebbd-400c-a43b-bdeb87dceca0" ContentHash="CpZu3Hz2z0-DZaCclxTx-Q" CvElementArea="1129, 314, 93, 39" CvTextArea="1140, 326, 70, 18" CvTextArgument="Reject all" CvType="Button" DesignTimeRectangle="1131, 316, 89, 36" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Reject all' tag='BUTTON' /&gt;" Guid="869d9f68-bcb3-454e-be6e-bc27a65a0dba" InformativeScreenshot="f7faa8721474b073c9f4069a02b8985d.png" Reference="hG3uUG0x10qU96JB-5NUow/6xFIO134REOablu90tgX1w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Finviz - Stock Screener' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Rejected cookies prompt&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Am respins cookie-urile&quot;]" />
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,229.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,233.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Cookies prompt did not appear&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Fereastra de cookies nu a aparut&quot;]" />
                           </Sequence>
                         </If.Else>
                       </If>
